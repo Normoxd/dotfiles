@@ -1,0 +1,104 @@
+//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
+//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
+//  |   __|     |__   | | | |   __|   __| | | |   --|     |
+//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  ARCH  
+//
+//  by Bina
+// Modified by Normo! for personal use
+
+// execute with: fastfetch --colors-block-range-start 9 --colors-block-width 3
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/cat.txt",
+        "color": {"1": "light_blue"},
+        "padding": {
+            "top": 2,
+            "right": 6
+        }
+    },
+    "display": {
+        "separator": ""
+    },
+    "modules": [
+	"break",
+	{
+            "type": "title",
+        },
+	{
+            "type": "title",
+            "format": "------------------------------------------------",
+        },
+        {
+            "type": "os",
+            "key": "  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "kernel",
+            "key": "  ",
+            "keyColor": "light_blue",
+        },
+        {
+            "type": "host",
+            "format": "{5} {1}",
+            "key": "󰌢  ",
+            "keyColor": "light_blue",
+        },
+        {
+            "type": "packages",
+            "format": "{} (RPM)",
+            "key": "  ",
+            "keyColor": "light_blue",  
+        },
+        {
+            "type": "shell",
+            "key": "  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "terminal",
+            "key": "  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "wm",
+            "key": "  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "wmtheme",
+            "key": "󰉼  ",
+            "keyColor": "light_blue",
+        },
+        {
+            "type": "icons",
+            "key": "  ",
+            "keyColor": "light_blue",
+        },
+        {
+            "type": "cursor",
+            "key": "󰇀  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "terminalfont",
+            "key": "  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "uptime",
+            "key": "  ",
+            "keyColor": "light_blue", 
+        },
+        {
+            "type": "title",
+            "format": "------------------------------------------------",
+        },
+        
+        "colors",
+        "break",
+        "break",
+    ]
+}
