@@ -1,6 +1,6 @@
 # Hyprland dotfiles
 
-![Overview](https://github.com/Normoxd/dotfiles/blob/main/img1.png?raw=true)
+![Overview](https://github.com/Normoxd/dotfiles/blob/main/img.png?raw=true)
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img2.png?raw=true)
 
 # ⚙️ Installation
