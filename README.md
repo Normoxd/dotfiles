@@ -4,11 +4,10 @@
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img2.png?raw=true)
 
 # ⚙️ Installation
+> Manual installation only for now, deal with it
 
 1. Install the dependencies listed below
 2. Copy over config files to your `~/.config`
-
-> There's no install script yet because i'm too dumb to make one, if you have enough braincells to do it pwease help :3
 
 # 🔗 Software Used
 - [swaybg](https://github.com/swaywm/swaybg)
@@ -16,6 +15,8 @@
 - [wofi](https://github.com/SimplyCEO/wofi)
 - [mako](https://github.com/emersion/mako)
 - [kitty](https://github.com/kovidgoyal/kitty)
+- [hyprlock](https://github.com/hyprwm/hyprlock)
+- [hypridle](https://github.com/hyprwm/hypridle)
 - [polkit](https://wiki.archlinux.org/title/Polkit)
 - [flameshot](https://github.com/flameshot-org/flameshot)
 - [grim](https://gitlab.freedesktop.org/emersion/grim)
@@ -26,6 +27,40 @@
 - [Pwropts](https://github.com/Normoxd/Pwropts)
 - [Jetbrains mono](https://www.jetbrains.com/lp/mono/)
 - [Google Sans](https://fonts.google.com/specimen/Google+Sans)
+
+# ⌨️ Keybinds
+> I use Colemak DH so if you use something else it might feel awkward, feel free to edit them to your liking
+
+| Keyboard combinations                                             | Action                |
+|-------------------------------------------------------------------|-----------------------|
+| <kbd></kbd>+<kbd>SPACE</kbd>                                     | Open kitty terminal   |
+| <kbd></kbd>+<kbd>Q</kbd>                                         | Quit selected app     |
+| <kbd></kbd>+<kbd>W</kbd>                                         | Toggle floating window|
+| <kbd></kbd>+<kbd>R</kbd>                                         | Open app menu (wofi)  |
+| <kbd></kbd>+<kbd>P</kbd>                                         | pseudo                |
+| <kbd></kbd>+<kbd>X</kbd>                                         | Open power options    |
+| <kbd></kbd>+<kbd>A</kbd>                                         | Open Better Control app |
+| <kbd></kbd>+<kbd>V</kbd>                                         | Open clipboard        |
+| <kbd></kbd>+<kbd>Z</kbd>                                         | Open Zen Browser      |
+| <kbd></kbd>+<kbd>L</kbd>                                         | Lock the screen (hyprlock) |
+| <kbd></kbd>+<kbd>F11</kbd>                                       | Full screen window    |
+| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>←</kbd>                          | Move focus left       |
+| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>→</kbd>                          | Move focus right      |
+| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>↓</kbd>                          | Move focus down.      |
+| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>↑</kbd>                          | Move focus up.        |
+| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>←</kbd>                        | Move window to left   | 
+| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>→</kbd>                        | Move window to right  |
+| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>↓</kbd>                        | Move window to down   |
+| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>↑</kbd>                        | Move window to up     |
+| <kbd></kbd>+<kbd>1 to 10</kbd>                                   | Move to workspace     |
+| <kbd></kbd>+<kbd>←</kbd>                                         | Move to the left workspace |
+| <kbd></kbd>+<kbd>→</kbd>                                         | Move to the right workspace |
+| <kbd></kbd>+<kbd>CTRL</kbd>+<kbd>1</kbd> to <kbd>10</kbd>        | Move window to a workspace |
+| <kbd></kbd>+<kbd>CTRL</kbd>+<kbd>←</kbd>                         | Move window to the left workspace |
+| <kbd></kbd>+<kbd>CTRL</kbd>+<kbd>→</kbd>                         | Move window to the right workspace |
+| <kbd>Print Screen</kbd>                                           | Take a screenshot (full screen) |
+| <kbd>SHIFT</kbd><kbd>Print Screen</kbd>                           | Take a screenshot (area select) |
+| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>S</kbd>                        | Open Flameshot        |
 
 # 📝 Credits
 - [Monochrome Hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [Xindicate](https://github.com/xindicate-dev)
