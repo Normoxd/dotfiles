@@ -31,36 +31,36 @@
 # ⌨️ Keybinds
 > I use Colemak DH so if you use something else it might feel awkward, feel free to edit them to your liking
 
-| Keyboard combinations                                             | Action                |
-|-------------------------------------------------------------------|-----------------------|
-| <kbd></kbd>+<kbd>SPACE</kbd>                                     | Open kitty terminal   |
-| <kbd></kbd>+<kbd>Q</kbd>                                         | Quit selected app     |
-| <kbd></kbd>+<kbd>W</kbd>                                         | Toggle floating window|
-| <kbd></kbd>+<kbd>R</kbd>                                         | Open app menu (wofi)  |
-| <kbd></kbd>+<kbd>P</kbd>                                         | pseudo                |
-| <kbd></kbd>+<kbd>X</kbd>                                         | Open power options    |
-| <kbd></kbd>+<kbd>A</kbd>                                         | Open Better Control app |
-| <kbd></kbd>+<kbd>V</kbd>                                         | Open clipboard        |
-| <kbd></kbd>+<kbd>Z</kbd>                                         | Open Zen Browser      |
-| <kbd></kbd>+<kbd>L</kbd>                                         | Lock the screen (hyprlock) |
-| <kbd></kbd>+<kbd>F11</kbd>                                       | Full screen window    |
-| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>←</kbd>                          | Move focus left       |
-| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>→</kbd>                          | Move focus right      |
-| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>↓</kbd>                          | Move focus down.      |
-| <kbd></kbd>+<kbd>ALT</kbd>+<kbd>↑</kbd>                          | Move focus up.        |
-| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>←</kbd>                        | Move window to left   | 
-| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>→</kbd>                        | Move window to right  |
-| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>↓</kbd>                        | Move window to down   |
-| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>↑</kbd>                        | Move window to up     |
-| <kbd></kbd>+<kbd>1 to 10</kbd>                                   | Move to workspace     |
-| <kbd></kbd>+<kbd>←</kbd>                                         | Move to the left workspace |
-| <kbd></kbd>+<kbd>→</kbd>                                         | Move to the right workspace |
-| <kbd></kbd>+<kbd>CTRL</kbd>+<kbd>1</kbd> to <kbd>10</kbd>        | Move window to a workspace |
-| <kbd></kbd>+<kbd>CTRL</kbd>+<kbd>←</kbd>                         | Move window to the left workspace |
-| <kbd></kbd>+<kbd>CTRL</kbd>+<kbd>→</kbd>                         | Move window to the right workspace |
-| <kbd>Print Screen</kbd>                                           | Take a screenshot (full screen) |
-| <kbd>SHIFT</kbd><kbd>Print Screen</kbd>                           | Take a screenshot (area select) |
-| <kbd></kbd>+<kbd>SHIFT</kbd>+<kbd>S</kbd>                        | Open Flameshot        |
+| Key combinations                                                        | Action                |
+|-------------------------------------------------------------------------|-----------------------|
+| <kbd>SUPER</kbd> + <kbd>SPACE</kbd>                                     | Open kitty terminal   |
+| <kbd>SUPER</kbd> + <kbd>Q</kbd>                                         | Quit selected app     |
+| <kbd>SUPER</kbd> + <kbd>W</kbd>                                         | Toggle floating window|
+| <kbd>SUPER</kbd> + <kbd>R</kbd>                                         | Open app menu (wofi)  |
+| <kbd>SUPER</kbd> + <kbd>P</kbd>                                         | pseudo                |
+| <kbd>SUPER</kbd> + <kbd>X</kbd>                                         | Open power options    |
+| <kbd>SUPER</kbd> + <kbd>A</kbd>                                         | Open Better Control app |
+| <kbd>SUPER</kbd> + <kbd>V</kbd>                                         | Open clipboard        |
+| <kbd>SUPER</kbd> + <kbd>Z</kbd>                                         | Open Zen Browser      |
+| <kbd>SUPER</kbd> + <kbd>L</kbd>                                         | Lock the screen (hyprlock) |
+| <kbd>SUPER</kbd> + <kbd>F11</kbd>                                       | Full screen window    |
+| <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd>                        | Move focus left       |
+| <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd>                        | Move focus right      |
+| <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd>                        | Move focus down.      |
+| <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd>                        | Move focus up.        |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd>                      | Move window to left   | 
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd>                      | Move window to right  |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd>                      | Move window to down   |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd>                      | Move window to up     |
+| <kbd>SUPER</kbd> + <kbd>1 to 10</kbd>                                   | Move to workspace     |
+| <kbd>SUPER</kbd> + <kbd>←</kbd>                                         | Move to the left workspace |
+| <kbd>SUPER</kbd> + <kbd>→</kbd>                                         | Move to the right workspace |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>1</kbd> to <kbd>10</kbd>      | Move window to a workspace |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>←</kbd>                       | Move window to the left workspace |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>→</kbd>                       | Move window to the right workspace |
+| <kbd>Print Screen</kbd>                                                 | Take a screenshot (full screen) |
+| <kbd>SHIFT</kbd> + <kbd>Print Screen</kbd>                              | Take a screenshot (area select) |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd>                      | Open Flameshot        |
 
 # 📝 Credits
 - [Monochrome Hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [Xindicate](https://github.com/xindicate-dev)
