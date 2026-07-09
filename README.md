@@ -24,12 +24,13 @@
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - [cliphist](https://github.com/sentriz/cliphist)
 - [Better Control](https://github.com/better-ecosystem/better-control)
+- [screentime](https://github.com/vivekvardhanmodi/ScreenTime)
 - [Pwropts](https://github.com/Normoxd/Pwropts)
 - [Jetbrains mono](https://www.jetbrains.com/lp/mono/)
 - [Google Sans](https://fonts.google.com/specimen/Google+Sans)
 
 # ⌨️ Keybinds
-> I use Colemak DH so if you use something else it might feel awkward, feel free to edit them to your liking
+> I use Colemak DH so if you use a different layout these binds might feel awkward, feel free to edit them to your liking
 
 | Key combinations                                                        | Action                |
 |-------------------------------------------------------------------------|-----------------------|
