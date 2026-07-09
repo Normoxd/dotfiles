@@ -30,7 +30,7 @@
 - [Google Sans](https://fonts.google.com/specimen/Google+Sans)
 
 # ⌨️ Keybinds
-> I use Colemak DH so if you use a different layout these might feel awkward. feel free to edit
+> I use Colemak DH so if you use a different layout these binds might feel awkward. feel free to edit
 
 | Key combinations                                                        | Action                |
 |-------------------------------------------------------------------------|-----------------------|
