@@ -8,6 +8,10 @@
 
 1. Install the dependencies listed below
 2. Copy over config files to your `~/.config`
+3. Make the scripts executable cuz why not 🤷
+```
+chmod -R +x ~/.config/hypr/scripts
+```
 
 # 🔗 Software Used
 - [swaybg](https://github.com/swaywm/swaybg)
@@ -25,12 +29,11 @@
 - [cliphist](https://github.com/sentriz/cliphist)
 - [Better Control](https://github.com/better-ecosystem/better-control)
 - [screentime](https://github.com/vivekvardhanmodi/ScreenTime)
-- [Pwropts](https://github.com/Normoxd/Pwropts)
-- [Jetbrains mono](https://www.jetbrains.com/lp/mono/)
+- [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
 - [Google Sans](https://fonts.google.com/specimen/Google+Sans)
 
 # ⌨️ Keybinds
-> I use Colemak DH so if you use a different layout these binds might feel awkward. feel free to edit
+> I use Colemak DH so if you use a different layout these binds might feel awkward. feel free to edit them
 
 | Key combinations                                                        | Action                |
 |-------------------------------------------------------------------------|-----------------------|
