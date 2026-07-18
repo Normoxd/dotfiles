@@ -4,7 +4,7 @@
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img2.png?raw=true)
 
 # ⚙️ Installation
-> Manual installation only for now, deal with it
+> Only manual installation for now, deal with it
 
 1. Install the dependencies listed below
 2. Copy over config files to your `~/.config`
