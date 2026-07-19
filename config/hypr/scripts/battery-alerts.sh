@@ -1,50 +1,86 @@
 #!/bin/bash
-# this thing is inefficient af. Keep that in mind :3
+# Held together with hopes and prayers. Don't touch anything 🙏
 
-below10=false
-below20=false
+notified10=false
+notified20=false
 full=false
+plugged=false
+firstrun=true
+ASSETS="$HOME/.config/hypr/assets"
+BATTERY="/sys/class/power_supply/BAT1"
+
+if [[ ! -d "$BATTERY" ]]; then
+    notify-send "/hypr/scripts/battery-alerts.sh" "No battery found (BAT1)\n\nTry changing it to BAT0 if you actually have one"
+    exit 1
+fi
 
 while true; do
-    b_level=$(cat /sys/class/power_supply/BAT1/capacity)
-    b_status=$(cat /sys/class/power_supply/BAT1/status)
-    
-    if [[ "$b_status" == "Discharging" ]]; then
+    b_level=$(< "$BATTERY/capacity")
+    b_status=$(< "$BATTERY/status")
 
-        if [[ $b_level -le 10 && "$below10" == false ]]; then
-            notify-send -u critical -i ~/.config/hypr/assets/batterycritical.png "Ciwitical battury :3" "Lewul: $b_level%"
-            paplay ~/.config/hypr/assets/battery-caution.oga
-            full=false
-            below20=true
-            #below10=true   # uncomment this if you dont want this alert to repeat
+   if [[ "$firstrun" == true ]]; then
+        if [[ "$b_status" == "Charging" ]]; then
+           plugged=true
+       else
+           plugged=false
         fi
-        if [[ $b_level -le 20 && "$below20" == false ]]; then
-            notify-send -i ~/.config/hypr/assets/batterylow.png "Louw Batttury" "Levwel: $b_level%"
-            paplay ~/.config/hypr/assets/battery-low.oga
-            full=false
-            below20=true
-            below10=false
+
+       firstrun=false
+   fi
+
+    if [[ "$b_status" == "Discharging" ]]; then
+        
+        if [[ $plugged == true ]]; then
+            paplay "$ASSETS/power-unplug.oga"
+            plugged=false
         fi
+        
+        if (( b_level <= 10 )) && [[ "$notified10" == false ]]; then
+            notify-send -u critical -i "$ASSETS/batterycritical.png" "Ciwitical battury :3" "Lewul: $b_level%"
+            paplay "$ASSETS/battery-caution.oga"
+            #notified10=true  #(uncomment this if you dont want this to repeat)
+            notified20=true
+        fi
+
+        if (( b_level <= 20 )) && [[ "$notified20" == false ]]; then
+            notify-send -i "$ASSETS/batterylow.png" "Louw Batttury" "Levwel: $b_level%"
+            paplay "$ASSETS/battery-low.oga"
+            notified20=true
+        fi
+        
+        if [[ $full == true ]]; then
+            full=false
+        fi
+    fi
+
+    if [[ "$b_status" == "Full" && "$full" == false ]]; then
+        notify-send -i "$ASSETS/batteryfull.png" "bwaterry ful" "twime to unpugg!"
+        paplay "$ASSETS/battery-full.oga"
+        full=true
     fi
     
     if [[ "$b_status" == "Charging" ]]; then
-        if [[ "$b_level" == "100" && "$full" == false ]]; then
-           notify-send -i ~/.config/hypr/assets/batteryfull.png "bwaterry ful" "twime to unpugg!"
-           paplay ~/.config/hypr/assets/battery-full.oga
-           full=true
-           below10=false
-           below20=false
+    
+        if [[ "$plugged" == false ]]; then
+           paplay "$ASSETS/power-plug.oga"
+           plugged=true
+        fi
+       
+        if [[ $b_level -gt 20 ]]; then
+           notified10=false
+           notified20=false
         fi
     fi
-   
+
     #Debug section---------------     Uncomment when you need it okay? ❍⩊❍ this dam script is too fragile
     #echo $b_level $b_status 
-    #echo 10-? = $below10
-    #echo 20-? = $below20
+    #echo 10-? = $notified10
+    #echo 20-? = $notified20
     #echo 100? = $full
+    #echo plugged? = $plugged
+    #echo first run? = $firstrun
     #echo 
     #----------------------------
     
-    sleep 4
-    continue
+    sleep 2
 done
