@@ -1,10 +1,10 @@
 show=drun
-prompt=Search...
-width=520
-height=360
+prompt=Search :3
+width=320
+height=400
 location=center
 allow_images=true
-image_size=20
+image_size=25
 insensitive=true
 term=kitty
 gtk_dark=true
