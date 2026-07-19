@@ -1,65 +1,39 @@
-/* ===== WOFI: Clean Dark Rounded Theme (Translucent) ===== */
-
-window {
-    margin: 0px;
-    border: 2px solid rgba(190, 190, 190, 0.3);
-    border-radius: 18px;
-    background-color: rgba(20, 20, 20, 0.7);
-    font-family: JetbrainsMono;
-    font-size: 13px;
-}
-
-/* Main outer box */
-#outer-box {
-    margin: 14px;
-    padding: 12px;
-    border-radius: 14px;
-    background-color: rgba(20, 20, 20, 0.5);
-}
-
-/* Search entry */
-#input {
-    margin: 0px 0px 12px 0px;
-    padding: 10px 14px;
-    border-radius: 12px;
+* {
+    font-family: "Space Grotesk", "SpaceMono Nerd Font", monospace;
+    font-size: 11px;
     border: none;
-    background-color: rgba(60, 60, 60, 0.65);
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+window#waybar {
+    background: rgba(22, 22, 34, 0.5);
     color: #ffffff;
 }
 
-/* Results list background */
-#scroll {
-    margin: 0px;
-    border: none;
+#workspaces button {
+    padding: 0 8px;
+    margin: 5px 2px;
+    border-radius: 7px;
+    background: transparent;
+    color: #bbbbbb;
 }
 
-#inner-box {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgba(20, 20, 20, 0.8);
+#workspaces button.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
 }
 
-/* Each row */
-#entry {
-    padding: 10px 12px;
-    margin: 4px 0px;
-    border-radius: 10px;
-    background-color: transparent;
-    color: rgba(220, 220, 220, 0.92);
-}
-
-/* Selected row */
-#entry:selected {
-    background-color: rgba(220, 184, 255, 0.82);
-    color: #000000;
-}
-
-/* Text inside rows */
-#text {
-    color: inherit;
-}
-
-/* Icons */
-#img {
-    margin-right: 10px;
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#tray,
+#battery {
+    padding: 0 12px;
+    margin: 5px 0;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.08);
 }
