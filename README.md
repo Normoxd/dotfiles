@@ -7,8 +7,9 @@
 > Only manual installation for now, deal with it
 
 1. Install the dependencies listed below
-2. Copy over config files to your `~/.config`
-3. Make the scripts executable cuz why not 🤷
+2. Copy over the font files to `$HOME/.local/share/fonts`
+3. Copy over config files to your `$HOME/.config`
+4. Make the scripts executable cuz why not 🤷
 ```
 chmod -R +x ~/.config/hypr/scripts
 ```
@@ -28,9 +29,6 @@ chmod -R +x ~/.config/hypr/scripts
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - [cliphist](https://github.com/sentriz/cliphist)
 - [Better Control](https://github.com/better-ecosystem/better-control)
-- [screentime](https://github.com/vivekvardhanmodi/ScreenTime)
-- [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)
-- [Google Sans](https://fonts.google.com/specimen/Google+Sans)
 
 # ⌨️ Keybinds
 > I use Colemak DH so if you use a different layout these binds might feel awkward. feel free to edit them
@@ -69,3 +67,5 @@ chmod -R +x ~/.config/hypr/scripts
 # 📝 Credits
 - [Monochrome Hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [Xindicate](https://github.com/xindicate-dev)
 - [Fastfetch config](https://github.com/LierB/fastfetch) by [Bina](https://github.com/LierB)
+- [Catppuccin Walls](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
+- [Modern Minimal UI Sounds](https://github.com/cadecomposer/modern-minimal-ui-sounds) by [cadmium](https://github.com/cadecomposer)
