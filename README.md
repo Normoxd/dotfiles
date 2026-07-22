@@ -7,8 +7,8 @@
 > Only manual installation for now, deal with it
 
 1. Install the dependencies listed below
-2. Copy over the font files to `$HOME/.local/share/fonts`
-3. Copy over config files to your `$HOME/.config`
+2. Copy over the font files to `~/.local/share/fonts`
+3. Copy over config files to your `~/.config`
 4. Make the scripts executable cuz why not 🤷
 ```
 chmod -R +x ~/.config/hypr/scripts
@@ -67,5 +67,5 @@ chmod -R +x ~/.config/hypr/scripts
 # 📝 Credits
 - [Monochrome Hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [Xindicate](https://github.com/xindicate-dev)
 - [Fastfetch config](https://github.com/LierB/fastfetch) by [Bina](https://github.com/LierB)
-- [Catppuccin Walls](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
+- [Catppuccin Mocha Walls](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
 - [Modern Minimal UI Sounds](https://github.com/cadecomposer/modern-minimal-ui-sounds) by [cadmium](https://github.com/cadecomposer)
