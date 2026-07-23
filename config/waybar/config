@@ -6,24 +6,24 @@
 
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock", "tray"],
-  "modules-right": ["memory", "network", "pulseaudio", "battery"],
-
+  "modules-right": ["memory", "network", "pulseaudio", "battery", "custom/notification"],
+  
   "clock": {
-    "format": "  {:%a %d %b  %I:%M %p}",
-    "on-click": "gnome-calendar"
+   "format": "  {:%a %d %b  %I:%M %p}",
+   "on-click": "gnome-calendar"
   },
 
   "pulseaudio": {
     "format": "ㅤ{volume}%",
-    "format-muted": "󰖁 MUTED",
+    "format-muted": "  MUTED",
     "scroll-step": 5,
-    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
   },
 
   "network": {
-    "format-wifi": "ㅤ{signalStrength}%",
+    "format-wifi": "󰤨ㅤ{signalStrength}%",
     "format-ethernet": "󰈀ㅤWIRED",
-    "format-disconnected": "ㅤDISCONNECTED",
+    "format-disconnected": "󰖪",
     "on-click": "control -wifi"
   },
 
@@ -34,12 +34,12 @@
 
   "memory": {
     "format": "ㅤ{used:0.1f}G",
-   "on-click": "gnome-system-monitor"
+   "on-click": "btop"
   },
 
   "battery": {
-    "format": "󰁹ㅤ{capacity}%",
-    "format-charging": "󰚥ㅤ{capacity}%",
+    "format": "ㅤ{capacity}%",
+    "format-charging": "󱐋  {capacity}%",
     "tooltip": true,
     "path": "/sys/class/power_supply/BAT0"
   },
@@ -50,5 +50,5 @@
 
   "hyprland/window": {
     "max-length": 20,
-  },
+  }
 }
