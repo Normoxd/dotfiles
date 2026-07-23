@@ -1,5 +1,4 @@
 #!/bin/bash
-# Held together with hopes and prayers. Don't touch anything 🙏
 
 notified10=false
 notified20=false
@@ -40,6 +39,7 @@ while true; do
             paplay "$ASSETS/battery-caution.oga"
             #notified10=true  #(uncomment this if you dont want this to repeat)
             notified20=true
+            sleep 2
         fi
 
         if (( b_level <= 20 )) && [[ "$notified20" == false ]]; then
