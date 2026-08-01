@@ -37,7 +37,7 @@ while true; do
         if (( b_level <= 10 )) && [[ "$notified10" == false ]]; then
             notify-send -u critical -i "$ASSETS/batterycritical.png" "Ciwitical battury :3" "Lewul: $b_level%"
             paplay "$ASSETS/battery-caution.oga"
-            #notified10=true  #(uncomment this if you dont want this to repeat)
+            notified10=true
             notified20=true
             sleep 2
         fi
@@ -62,7 +62,7 @@ while true; do
     if [[ "$b_status" == "Charging" ]]; then
     
         if [[ "$plugged" == false ]]; then
-           paplay "$ASSETS/power-plug.oga"
+           paplay "$ASSETS/message-new-instant.oga"
            plugged=true
         fi
        
