@@ -40,6 +40,7 @@ chmod -R +x ~/.config/hypr/scripts
 | <kbd>SUPER</kbd> + <kbd>W</kbd>                                         | Toggle floating window|
 | <kbd>SUPER</kbd> + <kbd>R</kbd>                                         | Open app menu (wofi)  |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                                         | pseudo                |
+| <kbd>SUPER</kbd> + <kbd>B</kbd>                                         | Turn off screen       |
 | <kbd>SUPER</kbd> + <kbd>X</kbd>                                         | Open power options    |
 | <kbd>SUPER</kbd> + <kbd>A</kbd>                                         | Open Better Control app |
 | <kbd>SUPER</kbd> + <kbd>V</kbd>                                         | Open clipboard        |
