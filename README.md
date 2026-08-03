@@ -3,7 +3,7 @@
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img.png?raw=true)
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img2.png?raw=true)
 
-# ⚙️ Installation
+## ⚙️ Installation
 > Only manual installation for now, deal with it
 
 1. Install the dependencies listed below
@@ -14,7 +14,7 @@
 chmod -R +x ~/.config/hypr/scripts
 ```
 
-# 🔗 Software Used
+## 🔗 Software Used
 - [swaybg](https://github.com/swaywm/swaybg)
 - [waybar](https://github.com/alexays/waybar)
 - [wofi](https://github.com/SimplyCEO/wofi)
@@ -30,7 +30,7 @@ chmod -R +x ~/.config/hypr/scripts
 - [cliphist](https://github.com/sentriz/cliphist)
 - [Better Control](https://github.com/better-ecosystem/better-control)
 
-# ⌨️ Keybinds
+## ⌨️ Keybinds
 > I use Colemak DH so if you use a different layout these binds might feel awkward. feel free to edit them
 
 | Key combinations                                                        | Action                |
@@ -65,7 +65,7 @@ chmod -R +x ~/.config/hypr/scripts
 | <kbd>SHIFT</kbd> + <kbd>Print Screen</kbd>                              | Take a screenshot (area select) |
 | <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd>                      | Open Flameshot        |
 
-# 📝 Credits
+## 📝 Credits
 - [Monochrome Hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [Xindicate](https://github.com/xindicate-dev)
 - [Fastfetch config](https://github.com/LierB/fastfetch) by [Bina](https://github.com/LierB)
 - [Catppuccin Mocha Walls](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
