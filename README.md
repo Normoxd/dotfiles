@@ -1,20 +1,9 @@
-# Hyprland dotfiles
+# hyprland dotfiles
 
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img.png?raw=true)
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img2.png?raw=true)
 
-## ⚙️ Installation
-> Only manual installation for now, deal with it
-
-1. Install the dependencies listed below
-2. Copy over the font files to `~/.local/share/fonts`
-3. Copy over config files to your `~/.config`
-4. Make the scripts executable cuz why not 🤷
-```
-chmod -R +x ~/.config/hypr/scripts
-```
-
-## 🔗 Software Used
+## stuff
 - [swaybg](https://github.com/swaywm/swaybg)
 - [waybar](https://github.com/alexays/waybar)
 - [wofi](https://github.com/SimplyCEO/wofi)
@@ -28,45 +17,45 @@ chmod -R +x ~/.config/hypr/scripts
 - [slurp](https://github.com/emersion/slurp)
 - [wl-clipboard](https://github.com/bugaevc/wl-clipboard)
 - [cliphist](https://github.com/sentriz/cliphist)
-- [Better Control](https://github.com/better-ecosystem/better-control)
+- [better-control](https://github.com/better-ecosystem/better-control)
 
-## ⌨️ Keybinds
-> I use Colemak DH so if you use a different layout these binds might feel awkward. feel free to edit them
+## keybinds
+> i use colemak dh so if you use a different layout these keys will be placed awkwardly
 
 | Key combinations                                                        | Action                |
 |-------------------------------------------------------------------------|-----------------------|
 | <kbd>SUPER</kbd> + <kbd>SPACE</kbd>                                     | Open kitty terminal   |
 | <kbd>SUPER</kbd> + <kbd>Q</kbd>                                         | Quit selected app     |
 | <kbd>SUPER</kbd> + <kbd>W</kbd>                                         | Toggle floating window|
+| <kbd>SUPER</kbd> + <kbd>F</kbd>                                         | File manager (nautilus) |
+| <kbd>SUPER</kbd> + <kbd>L</kbd>                                         | Lock (hyprlock)       |
+| <kbd>SUPER</kbd> + <kbd>A</kbd>                                         | Open better control |
 | <kbd>SUPER</kbd> + <kbd>R</kbd>                                         | Open app menu (wofi)  |
-| <kbd>SUPER</kbd> + <kbd>P</kbd>                                         | pseudo                |
 | <kbd>SUPER</kbd> + <kbd>B</kbd>                                         | Turn off screen       |
-| <kbd>SUPER</kbd> + <kbd>X</kbd>                                         | Open power options    |
-| <kbd>SUPER</kbd> + <kbd>A</kbd>                                         | Open Better Control app |
-| <kbd>SUPER</kbd> + <kbd>V</kbd>                                         | Open clipboard        |
-| <kbd>SUPER</kbd> + <kbd>Z</kbd>                                         | Open Zen Browser      |
-| <kbd>SUPER</kbd> + <kbd>L</kbd>                                         | Lock the screen (hyprlock) |
+| <kbd>SUPER</kbd> + <kbd>X</kbd>                                         | Power options         |
+| <kbd>SUPER</kbd> + <kbd>V</kbd>                                         | Clipboard             |
+| <kbd>SUPER</kbd> + <kbd>Z</kbd>                                         | Zen Browser           |
 | <kbd>SUPER</kbd> + <kbd>F11</kbd>                                       | Full screen window    |
 | <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>←</kbd>                        | Move focus left       |
 | <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>→</kbd>                        | Move focus right      |
 | <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>↓</kbd>                        | Move focus down.      |
 | <kbd>SUPER</kbd> + <kbd>ALT</kbd> + <kbd>↑</kbd>                        | Move focus up.        |
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd>                      | Move window to left   | 
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd>                      | Move window to right  |
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd>                      | Move window to down   |
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd>                      | Move window to up     |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>←</kbd>                      | Move window left      | 
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>→</kbd>                      | Move window right     |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↓</kbd>                      | Move window down      |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>↑</kbd>                      | Move window up        |
 | <kbd>SUPER</kbd> + <kbd>1 to 10</kbd>                                   | Move to workspace     |
-| <kbd>SUPER</kbd> + <kbd>←</kbd>                                         | Move to the left workspace |
-| <kbd>SUPER</kbd> + <kbd>→</kbd>                                         | Move to the right workspace |
+| <kbd>SUPER</kbd> + <kbd>←</kbd>                                         | Move to left workspace |
+| <kbd>SUPER</kbd> + <kbd>→</kbd>                                         | Move to right workspace |
 | <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>1</kbd> to <kbd>10</kbd>      | Move window to a workspace |
-| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>←</kbd>                       | Move window to the left workspace |
-| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>→</kbd>                       | Move window to the right workspace |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>←</kbd>                       | Move window to left workspace |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>→</kbd>                       | Move window to right workspace |
 | <kbd>Print Screen</kbd>                                                 | Take a screenshot (full screen) |
 | <kbd>SHIFT</kbd> + <kbd>Print Screen</kbd>                              | Take a screenshot (area select) |
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd>                      | Open Flameshot        |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd>                      | Flameshot            |
 
-## 📝 Credits
-- [Monochrome Hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [Xindicate](https://github.com/xindicate-dev)
-- [Fastfetch config](https://github.com/LierB/fastfetch) by [Bina](https://github.com/LierB)
-- [Catppuccin Mocha Walls](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
-- [Modern Minimal UI Sounds](https://github.com/cadecomposer/modern-minimal-ui-sounds) by [cadmium](https://github.com/cadecomposer)
+## credits
+- [monochrome-hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [xindicate-dev](https://github.com/xindicate-dev)
+- [fastfetch config](https://github.com/LierB/fastfetch) by [LierB](https://github.com/LierB)
+- [walls-catppuccin-mocha](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
+- [modern-minimal-ui-sounds](https://github.com/cadecomposer/modern-minimal-ui-sounds) by [cadmium](https://github.com/cadecomposer)
