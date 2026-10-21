@@ -1,16 +1,11 @@
-# hyprland dotfiles
+# Hyprland dotfiles
 
 ![Overview](https://github.com/Normoxd/dotfiles/blob/main/img.png?raw=true)
-![Overview](https://github.com/Normoxd/dotfiles/blob/main/img2.png?raw=true)
 
-## stuff
+# ~
 - [swaybg](https://github.com/swaywm/swaybg)
-- [waybar](https://github.com/alexays/waybar)
 - [wofi](https://github.com/SimplyCEO/wofi)
 - [mako](https://github.com/emersion/mako)
-- [kitty](https://github.com/kovidgoyal/kitty)
-- [hyprlock](https://github.com/hyprwm/hyprlock)
-- [hypridle](https://github.com/hyprwm/hypridle)
 - [polkit](https://wiki.archlinux.org/title/Polkit)
 - [flameshot](https://github.com/flameshot-org/flameshot)
 - [grim](https://gitlab.freedesktop.org/emersion/grim)
@@ -19,8 +14,8 @@
 - [cliphist](https://github.com/sentriz/cliphist)
 - [better-control](https://github.com/better-ecosystem/better-control)
 
-## keybinds
-> i use colemak dh so if you use a different layout these keys will be placed awkwardly
+## Keybinds
+> I use Colemak DH. If you were to use a different layout, these keys would be placed awkwardly
 
 | Key combinations                                                        | Action                |
 |-------------------------------------------------------------------------|-----------------------|
@@ -29,7 +24,7 @@
 | <kbd>SUPER</kbd> + <kbd>W</kbd>                                         | Toggle floating window|
 | <kbd>SUPER</kbd> + <kbd>F</kbd>                                         | File manager (nautilus) |
 | <kbd>SUPER</kbd> + <kbd>L</kbd>                                         | Lock (hyprlock)       |
-| <kbd>SUPER</kbd> + <kbd>A</kbd>                                         | Open better control |
+| <kbd>SUPER</kbd> + <kbd>A</kbd>                                         | Open better control   |
 | <kbd>SUPER</kbd> + <kbd>R</kbd>                                         | Open app menu (wofi)  |
 | <kbd>SUPER</kbd> + <kbd>B</kbd>                                         | Turn off screen       |
 | <kbd>SUPER</kbd> + <kbd>X</kbd>                                         | Power options         |
@@ -54,8 +49,8 @@
 | <kbd>SHIFT</kbd> + <kbd>Print Screen</kbd>                              | Take a screenshot (area select) |
 | <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>S</kbd>                      | Flameshot            |
 
-## credits
-- [monochrome-hyprland](https://github.com/xindicate-dev/monochrome-hyprland) by [xindicate-dev](https://github.com/xindicate-dev)
+## Credits
+- [monochrome-hyprland](https://github.com/xindidev/monochrome-hyprland) by [Xindicate](https://github.com/xindidev)
 - [fastfetch config](https://github.com/LierB/fastfetch) by [LierB](https://github.com/LierB)
 - [walls-catppuccin-mocha](https://github.com/orangci/walls-catppuccin-mocha) by [orangci](https://github.com/orangci)
 - [modern-minimal-ui-sounds](https://github.com/cadecomposer/modern-minimal-ui-sounds) by [cadmium](https://github.com/cadecomposer)
