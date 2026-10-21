@@ -1,10 +1,10 @@
 show=drun
 prompt=Search :3
-width=320
+width=380
 height=400
 location=center
 allow_images=true
-image_size=25
-insensitive=true
+image_size=30
+insensitive=false
 term=kitty
 gtk_dark=true

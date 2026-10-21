@@ -1,39 +1,65 @@
-* {
-    font-family: "Space Grotesk", "SpaceMono Nerd Font", monospace;
-    font-size: 11px;
+window {
+    margin: 0px;
+    border: 2px solid rgba(190, 190, 190, 0.3);
+    border-radius: 7px;
+    background-color: #171723;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+}
+
+/* Main outer box */
+#outer-box {
+    margin: 10px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: rgba(20, 20, 20, 0);
+}
+
+/* Search entry */
+#input {
+    margin: 0px 3px 12px 3px;
+    padding: 10px 14px;
+    border-radius: 4px;
     border: none;
-    margin-left: 4px;
-    margin-right: 4px;
-
-}
-
-window#waybar {
-    background: rgba(22, 22, 34, 0.5);
+    font-family: "JetBrains Mono";
+    background-color: #3F4053;
     color: #ffffff;
 }
 
-#workspaces button {
-    padding: 0 8px;
-    margin: 5px 2px;
-    border-radius: 7px;
-    background: transparent;
-    color: #bbbbbb;
+/* Results list background */
+#scroll {
+    margin: 0px;
+    border: none;
 }
 
-#workspaces button.active {
-    background: rgba(255, 255, 255, 0.15);
-    color: #ffffff;
+#inner-box {
+    margin: 0px;
+    padding: 10px;
+    background-color: rgba(10, 0, 20, 0.2);
+    border-radius: 5px;
 }
 
-#clock,
-#pulseaudio,
-#network,
-#cpu,
-#memory,
-#tray,
-#battery {
-    padding: 0 12px;
-    margin: 5px 0;
-    border-radius: 7px;
-    background: rgba(255, 255, 255, 0.08);
+/* Each row */
+#entry {
+    padding: 10px 12px;
+    margin: 4px 0px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: rgba(220, 220, 220, 0.88);
+}
+
+/* Selected row */
+#entry:selected {
+    background-color: rgba(220, 184, 255, 0.2);
+    color: rgba(220, 184, 255, 0.9);
+}
+
+/* Text inside rows */
+#text {
+    color: inherit;
+}
+
+/* Icons */
+#img {
+    margin-right: 20px;
 }
