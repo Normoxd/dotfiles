@@ -16,9 +16,9 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("swayosd-server")
     hl.exec_cmd("wl-paste --watch cliphist store")
     hl.exec_cmd("hypridle")
-    hl.exec_cmd("bash ~/.config/hypr/scripts/battery-alerts.sh")
-    hl.exec_cmd("paplay ~/.config/hypr/assets/w11-startup.mp3")
-    hl.exec_cmd("swaybg -i ~/Pictures/mocha-walls/cat-vibin.png")
+    hl.exec_cmd("exec ~/.config/hypr/scripts/battery-alerts.sh")
+    hl.exec_cmd("paplay ~/.config/hypr/assets/chromeos-battery-charging-sound.mp3")
+    hl.exec_cmd("swww-daemon")
 end)
 
 -- ~~~ Environment ~~~
@@ -47,15 +47,15 @@ hl.config({
         gaps_out     = 10,
         border_size  = 2,
         col = {
-            inactive_border = "rgba(25164b36)",
-            active_border   = "#171723",
+            inactive_border = "#000",
+            active_border   = "#000",
         },
         layout        = "dwindle",
         allow_tearing = false,
     },
 
     decoration = {
-        rounding = 0,
+        rounding = 2,
         blur = {
             enabled           = true,
             size              = 2,
@@ -113,9 +113,9 @@ hl.bind(mod .. " + A",             hl.dsp.exec_cmd("control"))
 hl.bind(mod .. " + V",             hl.dsp.exec_cmd("cliphist list | wofi -S dmenu | cliphist decode | wl-copy"))
 hl.bind(mod .. " + Z",             hl.dsp.exec_cmd("zen"))
 hl.bind(mod .. " + F",             hl.dsp.exec_cmd("nautilus"))
-hl.bind(mod .. " + L",             hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/lock.sh"))
-hl.bind(mod .. " + C",             hl.dsp.exec_cmd("bash ~/.config/hypr/scripts/caffeine.sh"))
-hl.bind(mod .. " + B",             hl.dsp.exec_cmd("bash $HOME/.config/hypr/scripts/screenbgone.sh"))
+hl.bind(mod .. " + L",             hl.dsp.exec_cmd("exec ~/.config/hypr/scripts/lock.sh"))
+hl.bind(mod .. " + C",             hl.dsp.exec_cmd("exec ~/.config/hypr/scripts/caffeine.sh"))
+hl.bind(mod .. " + B",             hl.dsp.exec_cmd("exec $HOME/.config/hypr/scripts/screenbgone.sh"))
 hl.bind(mod .. " + SHIFT + S",     hl.dsp.exec_cmd("flameshot gui"))
 hl.bind(mod .. " + F11",           hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 hl.bind(mod .. " + SHIFT + R",     hl.dsp.exec_cmd("hyprctl reload"))
