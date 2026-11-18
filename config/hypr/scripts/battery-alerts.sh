@@ -1,10 +1,10 @@
 #!/bin/bash
 
-notified10=false
-notified20=false
-full=false
+ping10=false
+ping20=false
 plugged=false
 firstrun=true
+full=false
 ASSETS="$HOME/.config/hypr/assets"
 BATTERY="/sys/class/power_supply/BAT1"
 
@@ -14,7 +14,7 @@ if [[ ! -d "$BATTERY" ]]; then
 fi
 
 while true; do
-    b_level=$(< "$BATTERY/capacity")
+    batt_lvl=$(< "$BATTERY/capacity")
     b_status=$(< "$BATTERY/status")
 
    if [[ "$firstrun" == true ]]; then
@@ -30,22 +30,28 @@ while true; do
     if [[ "$b_status" == "Discharging" ]]; then
         
         if [[ $plugged == true ]]; then
-            paplay "$ASSETS/power-unplug.oga"
+            pw-play "$ASSETS/power-unplug.oga"
             plugged=false
         fi
         
-        if (( b_level <= 10 )) && [[ "$notified10" == false ]]; then
-            notify-send -u critical -i "$ASSETS/batterycritical.png" "Ciwitical battury :3" "Lewul: $b_level%"
-            paplay "$ASSETS/battery-caution.oga"
-            notified10=true
-            notified20=true
-            sleep 2
+        if (( batt_lvl <= 5 )); then
+             notify-send -u critical -i "$ASSETS/battery-000.png" "Critical Battery" "Level: $batt_lvl%"
+             pw-play "$ASSETS/battery-caution.oga"
+             sleep 2
+        fi
+             
+        
+        if (( batt_lvl <= 10 )) && [[ "$ping10" == false ]]; then
+            notify-send -u critical -i "$ASSETS/battery-010.png" "Really Low Battery" "Level: $batt_lvl%"
+            pw-play "$ASSETS/battery-caution.oga"
+            ping10=true
+            ping20=true
         fi
 
-        if (( b_level <= 20 )) && [[ "$notified20" == false ]]; then
-            notify-send -i "$ASSETS/batterylow.png" "Louw Batttury" "Levwel: $b_level%"
-            paplay "$ASSETS/battery-low.oga"
-            notified20=true
+        if (( batt_lvl <= 20 )) && [[ "$ping20" == false ]]; then
+            notify-send -i "$ASSETS/battery-020.png" "Low Battery" "Level: $batt_lvl%"
+            pw-play "$ASSETS/battery-low.oga"
+            ping20=true
         fi
         
         if [[ $full == true ]]; then
@@ -53,34 +59,11 @@ while true; do
         fi
     fi
 
-    if [[ "$b_status" == "Full" && "$full" == false ]]; then
-        notify-send -i "$ASSETS/batteryfull.png" "bwaterry ful" "twime to unpugg!"
-        paplay "$ASSETS/battery-full.oga"
-        full=true
-    fi
-    
     if [[ "$b_status" == "Charging" ]]; then
-    
-        if [[ "$plugged" == false ]]; then
-           paplay "$ASSETS/message-new-instant.oga"
-           plugged=true
-        fi
-       
-        if [[ $b_level -gt 20 ]]; then
-           notified10=false
-           notified20=false
+        if [[ $batt_lvl -gt 20 ]]; then
+           ping10=false
+           ping20=false
         fi
     fi
-
-    #Debug section---------------     Uncomment when you need it okay? ❍⩊❍ this dam script is too fragile
-    #echo $b_level $b_status 
-    #echo 10-? = $notified10
-    #echo 20-? = $notified20
-    #echo 100? = $full
-    #echo plugged? = $plugged
-    #echo first run? = $firstrun
-    #echo 
-    #----------------------------
-    
     sleep 2
 done

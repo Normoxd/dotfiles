@@ -10,7 +10,6 @@ hl.monitor({
 hl.on("hyprland.start", function()
     hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
     hl.exec_cmd("systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
-    hl.exec_cmd("/usr/libexec/polkit-gnome-authentication-agent-1")
     hl.exec_cmd("waybar")
     hl.exec_cmd("mako")
     hl.exec_cmd("swayosd-server")
@@ -18,7 +17,7 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("hypridle")
     hl.exec_cmd("exec ~/.config/hypr/scripts/battery-alerts.sh")
     hl.exec_cmd("paplay ~/.config/hypr/assets/chromeos-battery-charging-sound.mp3")
-    hl.exec_cmd("swww-daemon")
+    hl.exec_cmd("awww-daemon")
 end)
 
 -- ~~~ Environment ~~~
@@ -32,7 +31,7 @@ hl.env("MOZ_ENABLE_WAYLAND", "1")
 hl.config({
     input = {
         kb_layout    = "us, lk",
-        kb_variant   = "colemak_dh, sin_phonetic_colemak",
+        kb_variant   = "colemak_dh",
         kb_options   = "grp:alt_shift_toggle",
         follow_mouse = 1,
         sensitivity  = 0,
