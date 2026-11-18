@@ -37,14 +37,12 @@
 
         {
             "type": "os",
-            "format": "Fedora 45 (Workstation)",
             "key": "  ",
             "keyColor": "31", 
         },
         
         {
             "type": "kernel",
-            "format": "Linux 7.0.6",
             "key": "  ",
             "keyColor": "31",
         },
@@ -89,7 +87,6 @@
         
         {
             "type": "cpu",
-            "format": "Intel Core i3-10110U",
             "key": "  ",
             "keyColor": "31",
         },
