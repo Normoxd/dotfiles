@@ -1,8 +1,8 @@
 window {
     margin: 0px;
-    border: 2px solid rgba(190, 190, 190, 0.3);
-    border-radius: 7px;
-    background-color: #171723;
+    border: 1px solid rgba(190, 190, 190, 0.2);
+    border-radius: 4px;
+    background-color: #000;
     font-family: "JetBrains Mono", monospace;
     font-size: 13px;
 }
@@ -22,7 +22,7 @@ window {
     border-radius: 4px;
     border: none;
     font-family: "JetBrains Mono";
-    background-color: #3F4053;
+    background-color: #000;
     color: #ffffff;
 }
 
@@ -35,13 +35,13 @@ window {
 #inner-box {
     margin: 0px;
     padding: 10px;
-    background-color: rgba(10, 0, 20, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
 /* Each row */
 #entry {
-    padding: 10px 12px;
+    padding: 5px 12px;
     margin: 4px 0px;
     border-radius: 4px;
     background-color: transparent;
@@ -50,7 +50,7 @@ window {
 
 /* Selected row */
 #entry:selected {
-    background-color: rgba(220, 184, 255, 0.2);
+    background-color: rgba(220, 184, 255, 0.1);
     color: rgba(220, 184, 255, 0.9);
 }
 
